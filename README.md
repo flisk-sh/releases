@@ -4,7 +4,7 @@ This repository is the release channel for prebuilt `tdk` binaries. It holds no 
 
 The binaries are compiled from the open-source, MIT-licensed **[flisk-sh/flisk](https://github.com/flisk-sh/flisk)**. The source code, docs, and issue tracker all live there. GitHub's automatic "Source code" downloads on this repository's releases contain only this README and the license, so get the source from tdk-cli-core instead.
 
-⭐ If TDK saves you time, please [star tdk-cli-core](https://github.com/flisk-sh/flisk/stargazers).
+⭐ If TDK saves you time, please [star flisk](https://github.com/flisk-sh/flisk/stargazers).
 
 ## Install
 
