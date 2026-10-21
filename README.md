@@ -28,7 +28,7 @@ Native Windows supports CLI inspection only. `tdk doctor` explains that running 
 Or install from npm instead:
 
 ```sh
-npm install -g @tdk-landscape/tdk-cli-core
+npm install -g @flisk-sh/flisk
 ```
 
 ## Download binaries
