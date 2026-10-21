@@ -2,14 +2,14 @@
 
 This repository is the release channel for prebuilt `tdk` binaries. It holds no source code, only release assets.
 
-The binaries are compiled from the open-source, MIT-licensed **[tdk-landscape/tdk-cli-core](https://github.com/tdk-landscape/tdk-cli-core)**. The source code, docs, and issue tracker all live there. GitHub's automatic "Source code" downloads on this repository's releases contain only this README and the license, so get the source from tdk-cli-core instead.
+The binaries are compiled from the open-source, MIT-licensed **[flisk-sh/flisk](https://github.com/flisk-sh/flisk)**. The source code, docs, and issue tracker all live there. GitHub's automatic "Source code" downloads on this repository's releases contain only this README and the license, so get the source from tdk-cli-core instead.
 
-⭐ If TDK saves you time, please [star tdk-cli-core](https://github.com/tdk-landscape/tdk-cli-core/stargazers).
+⭐ If TDK saves you time, please [star tdk-cli-core](https://github.com/flisk-sh/flisk/stargazers).
 
 ## Install
 
 ```sh
-curl -fsSL https://tdk-landscape.github.io/install.sh | sh
+curl -fsSL https://flisk.sh/install.sh | sh
 ```
 
 The script downloads the binary for your OS and CPU from the latest release, plus the bundled engine, verifies them against the release's `checksums.txt`, and installs them into `/usr/local/bin` (override with `TDK_INSTALL_DIR`). `tdk upgrade` runs the same check in current builds.
@@ -17,13 +17,13 @@ The script downloads the binary for your OS and CPU from the latest release, plu
 Windows AMD64 users can install the CLI from PowerShell:
 
 ```powershell
-irm https://tdk-landscape.github.io/install.ps1 | iex
+irm https://flisk.sh/install.ps1 | iex
 tdk --version
 tdk runtime --check-assets
 tdk doctor
 ```
 
-Native Windows supports CLI inspection only. `tdk doctor` explains that running a landscape requires Ubuntu in WSL2; use the [WSL2 setup guide](https://github.com/tdk-landscape/tdk-cli-core/blob/main/docs/wsl2.md) for `tdk project` and `tdk up`. Windows ARM64 is not supported.
+Native Windows supports CLI inspection only. `tdk doctor` explains that running a landscape requires Ubuntu in WSL2; use the [WSL2 setup guide](https://github.com/flisk-sh/flisk/blob/main/docs/wsl2.md) for `tdk project` and `tdk up`. Windows ARM64 is not supported.
 
 Or install from npm instead:
 
@@ -35,7 +35,7 @@ npm install -g @tdk-landscape/tdk-cli-core
 
 Latest release:
 
-https://github.com/tdk-landscape/tdk-cli-releases/releases/latest
+https://github.com/flisk-sh/releases/releases/latest
 
 Assets in current releases (`<version>` is the release tag, e.g. `v1.3.81`):
 
@@ -48,14 +48,14 @@ Assets in current releases (`<version>` is the release tag, e.g. `v1.3.81`):
 - `tdk-cli-<version>-binaries.zip` - all five binaries, the engine, and `checksums.txt` in one zip
 - `checksums.txt` - SHA-256 checksums of all five binaries and `tdk-cli-engine.tar.gz`
 
-The binaries and `tdk-cli-engine.tar.gz` keep the same name in every release, so you can always get the newest one from `https://github.com/tdk-landscape/tdk-cli-releases/releases/latest/download/<asset>`.
+The binaries and `tdk-cli-engine.tar.gz` keep the same name in every release, so you can always get the newest one from `https://github.com/flisk-sh/releases/releases/latest/download/<asset>`.
 
 ### Manual install
 
 A binary on its own is not enough. It looks for the engine and templates in a `tdk-cli/` folder next to itself; without it, `tdk project` and `tdk up` fail with errors such as "Failed to load template" or "TDK extension not found". Example for Linux x86_64 (make sure `~/.local/bin` is on your `PATH`):
 
 ```sh
-base=https://github.com/tdk-landscape/tdk-cli-releases/releases/latest/download
+base=https://github.com/flisk-sh/releases/releases/latest/download
 curl -fsSLO "$base/tdk-linux-amd64"
 curl -fsSLO "$base/tdk-cli-engine.tar.gz"
 curl -fsSLO "$base/checksums.txt"
@@ -72,7 +72,7 @@ tdk --version
 Use the Docker Compose example if you do not want to install the binary on your host:
 
 ```sh
-git clone https://github.com/tdk-landscape/tdk-docker-compose-example.git
+git clone https://github.com/flisk-sh/tdk-docker-compose-example.git
 cd tdk-docker-compose-example
 docker compose run --rm tdk tdk --version
 docker compose run --rm tdk tdk project --yes
@@ -80,4 +80,4 @@ docker compose run --rm tdk tdk project --yes
 
 Example repo:
 
-https://github.com/tdk-landscape/tdk-docker-compose-example
+https://github.com/flisk-sh/tdk-docker-compose-example
