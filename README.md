@@ -72,12 +72,12 @@ tdk --version
 Use the Docker Compose example if you do not want to install the binary on your host:
 
 ```sh
-git clone https://github.com/flisk-sh/tdk-docker-compose-example.git
-cd tdk-docker-compose-example
+git clone https://github.com/flisk-sh/flisk-docker-compose-example.git
+cd flisk-docker-compose-example
 docker compose run --rm tdk tdk --version
 docker compose run --rm tdk tdk project --yes
 ```
 
 Example repo:
 
-https://github.com/flisk-sh/tdk-docker-compose-example
+https://github.com/flisk-sh/flisk-docker-compose-example
