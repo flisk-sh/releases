@@ -2,7 +2,7 @@
 
 This repository is the release channel for prebuilt `flisk` binaries. It holds no source code, only release assets.
 
-The binaries are compiled from the open-source, MIT-licensed **[flisk-sh/flisk](https://github.com/flisk-sh/flisk)**. The source code, docs, and issue tracker all live there. GitHub's automatic "Source code" downloads on this repository's releases contain only this README and the license, so get the source from flisk-cli-core instead.
+The binaries are compiled from the open-source, MIT-licensed **[flisk-sh/flisk](https://github.com/flisk-sh/flisk)**. The source code, docs, and issue tracker all live there. GitHub's automatic "Source code" downloads on this repository's releases contain only this README and the license, so get the source from [flisk-sh/flisk](https://github.com/flisk-sh/flisk) instead.
 
 ⭐ If Flisk saves you time, please [star flisk](https://github.com/flisk-sh/flisk/stargazers).
 
