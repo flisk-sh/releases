@@ -9,3 +9,7 @@ test('README points readers at the repository that actually holds the source', (
   assert.match(readme, /\[flisk-sh\/flisk\]\(https:\/\/github\.com\/flisk-sh\/flisk\)/);
   assert.match(readme, /get the source from \[flisk-sh\/flisk\]/);
 });
+
+test('README does not advertise the retired binaries zip as a current asset', () => {
+  assert.doesNotMatch(readme, /flisk-cli-<version>-binaries\.zip/);
+});

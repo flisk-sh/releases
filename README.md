@@ -37,7 +37,7 @@ Latest release:
 
 https://github.com/flisk-sh/releases/releases/latest
 
-Assets in current releases (`<version>` is the release tag, e.g. `v1.3.81`):
+Assets in current releases:
 
 - `flisk-linux-amd64` - Linux x86_64 / AMD64
 - `flisk-linux-arm64` - Linux ARM64 / AArch64
@@ -45,7 +45,6 @@ Assets in current releases (`<version>` is the release tag, e.g. `v1.3.81`):
 - `flisk-darwin-arm64` - macOS Apple Silicon
 - `flisk-windows-amd64.exe` - Windows AMD64 CLI
 - `flisk-cli-engine.tar.gz` - the bundled engine and templates the binary needs at runtime
-- `flisk-cli-<version>-binaries.zip` - all five binaries, the engine, and `checksums.txt` in one zip
 - `checksums.txt` - SHA-256 checksums of all five binaries and `flisk-cli-engine.tar.gz`
 
 The binaries and `flisk-cli-engine.tar.gz` keep the same name in every release, so you can always get the newest one from `https://github.com/flisk-sh/releases/releases/latest/download/<asset>`.
